@@ -24,7 +24,7 @@ const EQUIPMENT_NAMES = [
 const defaultHospitals = [
   {
     id: 'apollo-delhi',
-    name: 'Apollo Indraprastha Hospital',
+    name:  'Apollo Indraprastha Hospital',
     address: 'Sarita Vihar, Mathura Road',
     city: 'New Delhi',
     phone: '+91 11 2692 5858',

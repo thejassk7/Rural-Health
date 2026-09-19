@@ -757,6 +757,14 @@ textarea {
     border-radius:14px;
     color:var(--muted)
 }
+.location-header {
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px
+}
 @media(max-width:900px) {
     .auth-layout {
         grid-template-columns:1fr;
