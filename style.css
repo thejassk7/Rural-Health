@@ -765,6 +765,123 @@ textarea {
     gap:12px;
     margin-bottom:18px
 }
+
+/* Medicine Category Styles */
+.medicine-card {
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 7px 20px rgba(37,76,96,.05);
+    padding:20px;
+    transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.medicine-card:hover {
+    transform:translateY(-2px);
+    box-shadow:0 10px 28px rgba(37,76,96,.12)
+}
+
+.medicine-card.hidden {
+    display:none
+}
+
+.medicine-header {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:16px
+}
+
+.medicine-title {
+    font-size:1.1rem;
+    font-weight:700;
+    color:var(--ink);
+    flex:1
+}
+
+.medicine-category {
+    display:inline-flex;
+    align-items:center;
+    background:var(--teal-soft);
+    color:var(--primary);
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:.72rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.06em
+}
+
+.medicine-category.antiviral {
+    background:#e2f3f3;
+    color:#087f8c
+}
+
+.medicine-category.muscle-relaxant {
+    background:#ffe8e8;
+    color:#c75555
+}
+
+.medicine-category.dermatology {
+    background:#fef3cd;
+    color:#9e7a1a
+}
+
+.medicine-category.antibiotic {
+    background:#d4edda;
+    color:#155724
+}
+
+.medicine-category.pain-relief {
+    background:#fff2d9;
+    color:#b87616
+}
+
+.medicine-category.cold-cough {
+    background:#e7d4f5;
+    color:#6f42c1
+}
+
+.medicine-category.digestion {
+    background:#d1ecf1;
+    color:#0c5460
+}
+
+.pharmacy-links {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:12px;
+    margin-top:16px
+}
+
+.pharmacy-link {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px;
+    border:1px solid var(--line);
+    border-radius:9px;
+    background:#fbfdfe;
+    transition:background 0.2s
+}
+
+.pharmacy-link:hover {
+    background:var(--teal-soft)
+}
+
+.pharmacy-name {
+    font-weight:600;
+    color:var(--ink);
+    font-size:.9rem
+}
+
+.pharmacy-link .button {
+    padding:6px 10px;
+    font-size:.8rem;
+    margin-left:8px
+}
+
 @media(max-width:900px) {
     .auth-layout {
         grid-template-columns:1fr;
@@ -798,6 +915,9 @@ textarea {
     .main-nav a {
         flex:1;
         text-align:center
+    }
+    .pharmacy-links {
+        grid-template-columns:1fr
     }
 }
 @media(max-width:600px) {
@@ -847,5 +967,8 @@ textarea {
     }
     .user-greeting {
         display:none
+    }
+    .pharmacy-links {
+        grid-template-columns:1fr
     }
 }

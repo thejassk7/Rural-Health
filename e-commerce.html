@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSwastya - E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="#">
+                    <span class="brand-mark small">+</span>
+                    <span>TechSwastya<small>Medicines & Health Products</small></span>
+                </a>
+            </div>
+        </header>
+        
+        <main class="page-shell">
+            <section class="page-heading">
+                <div>
+                    <span class="eyebrow">Online Pharmacy</span>
+                    <h1>Medicines and Health Products</h1>
+                    <p class="muted">Order from trusted pharmacy platforms right from home.</p>
+                </div>
+            </section>
+
+            <section class="filter-panel panel">
+                <div class="filter-heading">
+                    <h2>Filter by Category</h2>
+                    <span class="count-label">Showing <span id="medicineCount">all</span> medicines</span>
+                    <button class="button text-button" data-action="clear-medicine-filters" type="button">Clear filters</button>
+                </div>
+                <div class="check-row">
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="all" checked onchange="filterMedicines()"> All Categories
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="antiviral" onchange="filterMedicines()"> Antiviral
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="muscle-relaxant" onchange="filterMedicines()"> Muscle Relaxants
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="dermatology" onchange="filterMedicines()"> Dermatology
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="antibiotic" onchange="filterMedicines()"> Antibiotics
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="pain-relief" onchange="filterMedicines()"> Pain Relief
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="cold-cough" onchange="filterMedicines()"> Cold & Cough
+                    </label>
+                    <label class="check-label">
+                        <input type="radio" name="medicineCategory" value="digestion" onchange="filterMedicines()"> Digestion
+                    </label>
+                </div>
+            </section>
+
+            <section class="hospital-list" id="medicinesList">
+                <!-- Medicine cards will be rendered here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="e-commerce.js"></script>
+</body>
+</html>
