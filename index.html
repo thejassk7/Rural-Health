@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Resource Availability</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="loginView" class="view auth-view">
+      <div class="auth-layout">
+        <div class="auth-copy"><span class="eyebrow">Care coordination</span><h1>Hospital Resource Availability</h1><p>Find beds, blood, equipment and specialists across trusted hospitals in one place.</p><div class="intro-stat"><strong>7</strong><span>connected hospitals</span></div></div>
+        <div class="login-card panel"><div class="brand-mark">+</div><h2>Welcome back</h2><p class="muted">Choose how you would like to continue.</p><div class="role-tabs"><button class="role-tab active" data-role="user" type="button">User</button><button class="role-tab" data-role="admin" type="button">Admin</button></div><form id="loginForm" class="form-stack" novalidate><div id="userFields"><label for="userName">Your name <span class="optional">(optional)</span></label><input id="userName" type="text" placeholder="e.g. Priya Sharma"><button class="button primary full" type="submit">Continue as user <span aria-hidden="true">-&gt;</span></button></div><div id="adminFields" class="form-stack hidden"><label for="hospitalSelect">Hospital</label><select id="hospitalSelect"></select><label for="secretCode">Hospital secret code</label><input id="secretCode" type="password" placeholder="Enter your secret code" autocomplete="off"><p id="loginError" class="field-error" role="alert"></p><button class="button primary full" type="submit">Open admin dashboard <span aria-hidden="true">-&gt;</span></button></div></form></div>
+      </div>
+    </section>
+    <section id="userView" class="view hidden"></section>
+    <section id="adminView" class="view hidden"></section>
+    <section id="requestsView" class="view hidden"></section>
+  </div>
+  <div id="modalRoot"></div><div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
